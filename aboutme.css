@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'joystix';
+    color: #dbd8d8;
+    text-align: center;
+    
+    margin-top: 1.3rem;
+}
