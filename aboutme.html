@@ -17,7 +17,38 @@
     </header>
 
     <main>
+        <div class="about-me">
+            <div class="text-box" id="text-box"></div>
 
+        </div>
     </main>
+
+    <footer>
+        <div class="char">
+            <img src="img/runChar.gif" alt="">
+
+        </div>
+    </footer>
+
+    
+    <script>
+        const textElement = document.getElementById('text-box');
+        const text = "I'm an aspiring programmer starting my journey in the tech world. My goal is to become a full-stack developer, and I have already studied HTML and CSS. Currently, I'm diving into JavaScript to expand my skills and bring my ideas to life through code. I'm passionate about learning and excited about the endless possibilities that programming offers.";
+
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                textElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 50); // Ajuste o intervalo entre caracteres
+            }
+        }
+
+        // Inicia automaticamente ao carregar a página
+        window.onload = () => {
+            typeText();
+        };
+    </script>
 </body>
 </html>
